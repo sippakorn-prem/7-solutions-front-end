@@ -1,46 +1,103 @@
-# Getting Started with Create React App
+# Assignment
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## 1. Auto Delete Todo List
 
-## Available Scripts
+```
+    [
+        {
+            type: 'Fruit',
+            name: 'Apple',
+        },
+        {
+            type: 'Vegetable',
+            name: 'Broccoli',
+        },
+        {
+            type: 'Vegetable',
+            name: 'Mushroom',
+        },
+        {
+            type: 'Fruit',
+            name: 'Banana',
+        },
+        {
+            type: 'Vegetable',
+            name: 'Tomato',
+        },
+        {
+            type: 'Fruit',
+            name: 'Orange',
+        },
+        {
+            type: 'Fruit',
+            name: 'Mango',
+        },
+        {
+            type: 'Fruit',
+            name: 'Pineapple',
+        },
+        {
+            type: 'Vegetable',
+            name: 'Cucumber',
+        },
+        {
+            type: 'Fruit',
+            name: 'Watermelon',
+        },
+        {
+            type: 'Vegetable',
+            name: 'Carrot',
+        },
+    ]
+```
 
-In the project directory, you can run:
+Please make a todo list that
+- Take text input
+- Show data by type from array based on text input.
+- Each text input will have 5 second on the screen then will be auto removed
+- If that data already exists, it must be moved back.
 
-### `npm start`
+See example in the link below
+[https://drive.google.com/file/d/11PUfxCc3wRvsBd5DBS-FvTz2AMRLgRMW/view?usp=sharing](https://drive.google.com/file/d/1o1prsZjBSHDsfcrDFsuxH6U261UM0BOI/view?usp=drive_link)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Please do your best to show your best solution
+we are looking for
+1. Answer the need of question
+2. Clean code easy to read
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+Bonus: if you have multiple solutions we could discuss those theories in our interview (no need to submit multiple versions, just send us the best one you think.)
 
-### `npm test`
+## 2. Create data from API 
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+API from <https://dummyjson.com/users>
 
-### `npm run build`
+- Your project must use Typescript, Typescript module, and HTTP framework (GRPC is plus)
+- Tranforms JSON data from API to new data groupBy department
+- We encourage you to write tests, which we will give you some extra score
+- We will give you an extra score if you focus on performance.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+--- sample response --
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```json
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+department: [
+    {
+        "Marketing": {
+            "male": 1,                      // ---> Male Summary
+            "female": 1,                    // ---> Femlae Summary
+            "ageRange": "XX-XX",            // ---> Range
+            "ageMode": 1,                   // ---> Mode ฐานนิยม
+            "hair": {                       // ---> "Color": Color Summary
+                "Black": 1,                
+                "Blond": 1,
+                "Chestnut": 1,
+                "Brown": 1
+            },
+            "addressUser": {                // ---> "firstNamelastName": postalCode (address)
+                "TerryMedhurst": "XXXXX",
+            }
+        }
+    }, 
+    ...
+]
+```
