@@ -1,26 +1,28 @@
 import React from 'react';
-import './App.css';
-import logo from './logo.svg';
+import { Provider } from 'react-redux';
+import './App.scss';
+import TodoFilterTable from './components/TodoFilterTable';
+import TodoList from './components/TodoList';
+import TodoListInput from './components/TodoListInput';
+import store from './state';
 
-function App() {
-
+function DataDisplay(): React.JSX.Element {
 	return (
-		<div className="App">
-			<header className="App-header">
-				<img src={logo} className="App-logo" alt="logo" />
-				<p>
-					Edit <code>src/App.tsx</code> and save to reload.
-				</p>
-				<a
-					className="App-link"
-					href="https://reactjs.org"
-					target="_blank"
-					rel="noopener noreferrer"
-				>
-					Learn React
-				</a>
-			</header>
+		<div id={DataDisplay.name}>
+			<TodoListInput />
+			<TodoFilterTable />
 		</div>
+	);
+}
+
+function App(): React.JSX.Element {
+	return (
+		<Provider store={store}>
+			<div id={App.name}>
+				<TodoList />
+				<DataDisplay />
+			</div>
+		</Provider>
 	);
 }
 

@@ -1,0 +1,15 @@
+#TodoListInput {
+	display: flex;
+
+	.TextInput {
+		width: 100%;
+    padding: 20px;
+    font-size: 20px;
+	}
+
+	.AddButton {
+		width: 100px;
+		padding: 20px;
+    font-size: 20px;
+	}
+}

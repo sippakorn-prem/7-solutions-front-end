@@ -1,0 +1,10 @@
+.TodoListItem {
+	text-align: center;
+	padding: 24px 16px;
+	border: 1px solid;
+	font-size: 20px;
+	cursor: pointer;
+
+	&:hover { background-color: #eeeeee; }
+	&:active { background-color: #bdbdbd; }
+}
