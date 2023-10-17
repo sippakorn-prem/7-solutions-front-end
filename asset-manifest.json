@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/code-interview/7-solutions/front-end/static/css/main.51807b4d.css",
+    "main.js": "/code-interview/7-solutions/front-end/static/js/main.31cfe12f.js",
+    "static/js/787.22edae46.chunk.js": "/code-interview/7-solutions/front-end/static/js/787.22edae46.chunk.js",
+    "index.html": "/code-interview/7-solutions/front-end/index.html",
+    "main.51807b4d.css.map": "/code-interview/7-solutions/front-end/static/css/main.51807b4d.css.map",
+    "main.31cfe12f.js.map": "/code-interview/7-solutions/front-end/static/js/main.31cfe12f.js.map",
+    "787.22edae46.chunk.js.map": "/code-interview/7-solutions/front-end/static/js/787.22edae46.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.51807b4d.css",
+    "static/js/main.31cfe12f.js"
+  ]
+}
