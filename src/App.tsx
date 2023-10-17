@@ -9,6 +9,7 @@ import store from './state';
 function DataDisplay(): React.JSX.Element {
 	return (
 		<div id={DataDisplay.name}>
+			<h1 style={{ textAlign: 'center' }}>Select Item</h1>
 			<TodoListInput />
 			<TodoFilterTable />
 		</div>

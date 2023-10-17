@@ -9,6 +9,7 @@ type Props = AppState;
 function TodoList({ todoList }: Props): React.JSX.Element {
 	return (
 		<div id={TodoList.name}>
+			<h1 style={{ textAlign: 'center' }}>List</h1>
 			{todoList.map((item) => (
 				<TodoListItem key={item.name} data={item} clickable />
 			))}
