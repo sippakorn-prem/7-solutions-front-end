@@ -2,7 +2,7 @@
   "name": "front-end",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://sippakorn-prem.github.io/code-interview/7-solutions/front-end",
+  "homepage": "https://sippakorn-prem.github.io/7-solutions-front-end/",
   "scripts": {
     "start": "react-scripts start",
     "build": "rimraf dist && BUILD_PATH='./dist' react-scripts build",
