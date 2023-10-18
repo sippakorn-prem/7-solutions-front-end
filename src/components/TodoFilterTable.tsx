@@ -12,7 +12,7 @@ function TodoFilterTable({ currentTodoList }: Props): React.JSX.Element {
 	const filters = uniq(map(TodoListData, 'type'));
 
 	return (
-		<div id={TodoFilterTable.name}>
+		<div id="TodoFilterTable">
 			{filters.map((type) => (
 				<div className="TodoFilterColumn" key={type}>
 					<div className="TodoFilterHeader">{type}</div>

@@ -22,7 +22,7 @@ function TodoListItem({ data, clickable, setState }: Props): React.JSX.Element {
 
 	return (
 		<div
-			className={TodoListItem.name}
+			className="TodoListItem"
 			id={data.name}
 			onClick={addTodoList}
 			style={{ cursor: clickable ? 'pointer' : 'initial' }}

@@ -29,7 +29,7 @@ function TodoListInput({
 	}, [currentTodoList, selectedItem]);
 
 	return (
-		<div id={TodoListInput.name}>
+		<div id="TodoListInput">
 			<input
 				className="TextInput"
 				placeholder="Select item and press add button"

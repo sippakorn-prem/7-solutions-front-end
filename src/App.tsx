@@ -8,7 +8,7 @@ import store from './state';
 
 function DataDisplay(): React.JSX.Element {
 	return (
-		<div id={DataDisplay.name}>
+		<div id="DataDisplay">
 			<h1 style={{ textAlign: 'center' }}>Select Item</h1>
 			<TodoListInput />
 			<TodoFilterTable />
@@ -19,7 +19,7 @@ function DataDisplay(): React.JSX.Element {
 function App(): React.JSX.Element {
 	return (
 		<Provider store={store}>
-			<div id={App.name}>
+			<div id="App">
 				<TodoList />
 				<DataDisplay />
 			</div>
