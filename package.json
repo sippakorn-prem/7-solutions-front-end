@@ -2,14 +2,14 @@
   "name": "front-end",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://sippakorn-prem.github.io/7-solutions-front-end/",
+  "homepage": "https://sippakorn-prem.github.io/7-solutions-front-end",
   "scripts": {
     "start": "react-scripts start",
-    "build": "rimraf dist && BUILD_PATH='./dist' react-scripts build",
+    "build": "rimraf build && react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist",
+    "deploy": "gh-pages -d build",
     "husky:prepare": "husky install"
   },
   "eslintConfig": {
